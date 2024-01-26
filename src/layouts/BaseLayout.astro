@@ -76,10 +76,7 @@ const {description, title, preloadImg = ""} = Astro.props;
             <title>
                 {Astro.url.pathname === "/" ?  (`${ title }
                 |
-                ${ client.name }
-                |
-                ${ client.address.city },
-                ${ client.address.state }`) :
+                ${ client.name }`) :
                 (`${ title }
                     |
                     ${ client.name }`)

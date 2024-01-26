@@ -45,12 +45,14 @@ import client from "@data/client.json";
         </ul>
         <ul>
           <li>
-            <h2>Services</h2>
+            <h2>Roofing Services</h2>
           </li>
-          <li>Service1</li>
-          <li>Service2</li>
-          <li>Service4</li>
-          <li>Service5</li>
+          <li>Roof Repairs</li>
+          <li>Roof Installation</li>
+          <li>Roofing Inspections</li>
+          <li>Residential Roofing</li>
+          <li>Commercial Roofing</li>
+          <li>Emergency Roofing</li>
         </ul>
         <ul>
           <li>
@@ -60,8 +62,8 @@ import client from "@data/client.json";
             <a href="/contact">
               {client.address.lineOne}<br />
               {client.address.lineTwo}<br />
-              {client.address.city}
-              {client.address.state}
+              {client.address.city}, 
+              {client.address.state}, 
               {client.address.zip}
             </a>
           </li>
@@ -72,16 +74,16 @@ import client from "@data/client.json";
             </a>
           </li>
           <li>
-            <a href={`mailto:${client.email}`}>Click to Email</a>
+            <a href={`mailto:${client.email}`}>Request Quote</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="credit">
+ <!-- <div class="credit">
     <span>Designed and Hand Coded by</span>
     <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-    <span class="copyright"> Copyright 2023 - Present</span>
+    <span class="copyright"> Copyright 2023 - Present</span>  -->
   </div>
 </footer>

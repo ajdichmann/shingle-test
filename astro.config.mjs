@@ -1,6 +1,8 @@
 import { defineConfig } from "astro/config";
 import NetlifyCMS from "astro-netlify-cms";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -20,23 +22,52 @@ export default defineConfig({
             folder: "src/content/blog",
             create: true,
             fields: [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "description", widget: "string" },
-              { label: "Author", name: "author", widget: "string" },
-              { label: "Date", name: "date", widget: "datetime" },
+              {
+                label: "Title",
+                name: "title",
+                widget: "string",
+              },
+              {
+                label: "Description",
+                name: "description",
+                widget: "string",
+              },
+              {
+                label: "Author",
+                name: "author",
+                widget: "string",
+              },
+              {
+                label: "Date",
+                name: "date",
+                widget: "datetime",
+              },
               {
                 label: "Tags",
                 name: "tags",
                 widget: "list",
                 default: ["post"],
               },
-              { label: "Featured Image", name: "image", widget: "image" },
-              { label: "Image Caption", name: "imageAlt", widget: "string" },
-              { label: "Body", name: "body", widget: "markdown" },
+              {
+                label: "Featured Image",
+                name: "image",
+                widget: "image",
+              },
+              {
+                label: "Image Caption",
+                name: "imageAlt",
+                widget: "string",
+              },
+              {
+                label: "Body",
+                name: "body",
+                widget: "markdown",
+              },
             ],
           },
         ],
       },
     }),
+    sitemap(),
   ],
 });
