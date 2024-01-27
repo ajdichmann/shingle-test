@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@astrojs/cloudflare": "^9.0.0",
     "@astrojs/sitemap": "^3.0.5",
     "@cloudflare/pages-plugin-mailchannels": "^0.1.2",
     "@cloudflare/pages-plugin-static-forms": "^1.0.1",
