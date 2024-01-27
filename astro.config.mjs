@@ -1,8 +1,9 @@
 import { defineConfig } from "astro/config";
 import NetlifyCMS from "astro-netlify-cms";
 import sitemap from "@astrojs/sitemap";
-
 import cloudflare from "@astrojs/cloudflare";
+
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
@@ -58,5 +59,5 @@ export default defineConfig({
     }
   }), sitemap()],
   output: "server",
-  adapter: cloudflare()
+  adapter: netlify()
 });
