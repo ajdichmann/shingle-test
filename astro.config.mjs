@@ -10,7 +10,7 @@ export default defineConfig({
       config: {
         backend: {
           name: "git-gateway",
-          branch: "master",
+          branch: "main",
         },
         logo_url:
           "https://globerunner.com/wp-content/uploads/2020/09/globerunner-active.svg",
