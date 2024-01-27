@@ -12,6 +12,7 @@ export default defineConfig({
           name: "git-gateway",
           branch: "master",
           site_url: "https://fanciful-cupcake-ac3050.netlify.app",
+          site_domain: "https://fanciful-cupcake-ac3050.netlify.app",
         },
         logo_url:
           "https://globerunner.com/wp-content/uploads/2020/09/globerunner-active.svg",
