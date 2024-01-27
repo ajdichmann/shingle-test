@@ -48,7 +48,7 @@ const {description, title, preloadImg = ""} = Astro.props;
             <script defer src="/assets/js/nav.js"></script>
    
             {Astro.url.pathname === "/" &&
-            <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            <script is:inline defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script defer>
     if (window.netlifyIdentity) {
         window
