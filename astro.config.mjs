@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import NetlifyCMS from "astro-netlify-cms";
 import sitemap from "@astrojs/sitemap";
-import netlify from "@astrojs/netlify";
+// import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
