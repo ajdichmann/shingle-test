@@ -16,6 +16,7 @@ export default defineConfig({
           "https://globerunner.com/wp-content/uploads/2020/09/globerunner-active.svg",
         media_folder: "public/assets/images/blog",
         public_folder: "/assets/images/blog",
+        site_url: "https://fanciful-cupcake-ac3050.netlify.app",
         collections: [
           {
             name: "blog",
